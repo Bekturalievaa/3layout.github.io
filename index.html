@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>3rd layout</title>
+</head>
+<style>
+*
+{
+    font-family: 'Lato', sans-serif;
+  
+}
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.h2{
+    padding-left: 20px;
+}
+.grey-title{
+    color:#AEAEAE;
+}
+.document{
+    display:flex;
+    background-color: white;
+    border-radius: 13px;
+    border: black;
+    margin-top:20px;
+    margin-left: 20px;
+    
+}
+.title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options{
+    padding-top: 90px;
+    padding-bottom: 250px;
+    padding-left: 40px;
+}
+.logo{
+    padding-top: 20px ;
+    display:flex;
+    color:#0F4264;
+    font-size: 18px;
+    padding-left: 40px;
+    align-items: center;
+}
+.first-block{
+    border-right:  3px solid #F8F8F8;
+    width:252px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.opt-line{
+    padding-left: 25px;
+    color: #C7C7C7;
+    font-size: 16px;
+}
+.account{
+    display: flex;
+    height: 40px;
+    align-items: right;
+}
+.one-more-class{
+    padding-right: 20px;
+}
+.narr-grey{
+    color: #AEAEAE;
+}
+button{
+    background-color: #FFC145;
+    width:175px;
+    height:41px;
+    border-radius: 13px;
+    border-color: #ffc145;
+    font-size: 17px;
+}
+#first{
+    background-color: #FFC145;
+    width:230px;
+    height:50px;
+    border-radius: 13px;
+    border-color: #ffc145;
+    font-size: 19px;
+}
+.img-size{
+    width:50px;
+    height:50px;
+}
+.upgrade{
+    display: flex;
+    justify-content: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.upgrade-items{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.progressbar {
+  background-color:#F1F1F1;
+  border-radius: 13px;
+  padding: 3px;
+  width: 320px;
+}
+
+.progressbar>div {
+  background-color:#197BBD;
+  width: 70px;
+  height: 10px;
+  border-radius: 10px;
+}
+.card-block{
+    border-radius: 13px;
+    border: 1px solid #F1F1F1;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    width: 765px;
+    display:flex;
+    height: 364px;
+    margin-bottom: 32px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.card-grey{
+    color: #AEAEAE;
+    text-align: right;
+}
+#blue{
+    color: #197BBD;
+    font-size: 25px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+#green2{
+    color: #439A86;
+    font-size: 22px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+#red{
+    color:#BB4430;
+    font-size: 18px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+.progressbar1 {
+  background-color:#F1F1F1;
+  border-radius: 13px;
+  padding: 3px;
+  width: 25px;
+}
+
+.progressbar1>div {
+  background-color: #626769;
+  width: 50%;
+  height: 10px;
+  border-radius: 10px;
+}
+.card-line{
+    display:flex;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-right: 200px;
+    padding-right: 20px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    border-right:  1px solid #c7bdbd;
+}
+.card-2line{
+padding-left: 30px;
+}
+
+.card-line-items{
+    padding-right: 8px;
+}
+.classs{
+    display: flex;
+}
+.class1{
+    padding-right: 60px;
+    color: #CDCDCD;
+}
+.transaction-block{
+    font-size: 15px;
+    border-radius: 13px;
+    border: 1px solid #F1F1F1;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-top: 20px;
+    width: 720px;
+    height:330px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.right-position{
+    text-align: right;
+}
+.grey-grid{
+    color: #C7C7C7;
+    padding-left: 70px;
+}
+.image-block{
+    display:flex;
+}
+.columns{
+    display:flex;
+    margin-top: 40px;
+}
+.goals-line{
+    display:flex;
+    padding-left:30px;
+}
+.second-block{
+    padding-left: 65px;
+}
+.second-column{
+    padding-left: 30px;
+    
+}
+.goals-box-sum{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.goals-box{
+    border-radius: 13px;
+    border: 1px solid #F1F1F1;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    width: 160px;
+    height: 170px;
+    margin-left:20px;
+    font-size: 20px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.b-line{
+    font-size: 24px;
+    color: #696969;
+margin-bottom: 0px;
+margin-top: 0px;
+}
+.date-line{
+color:#C7C7C7;
+font-size: 14px;
+padding-top: 0px;
+padding-bottom: 50px;
+margin-bottom: 0px;
+margin-top: 0px;
+}
+.last-line{
+    display:flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.last-pic{
+    width: 175px;
+    height: 215px;
+    padding-left: 50px;
+}
+.transaction{
+    display:flex;
+    margin-top: 35px;
+    width: 700px;
+}
+.last-block{
+    border-radius: 13px;
+    border: 1px solid #F1F1F1;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 540px;
+    margin-left:20px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.photos{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.stat-line{
+    display:flex;
+    align-items: center;
+}
+.stat-center{
+    padding-left: 10px;;
+}
+.stat-grey{
+    color:#C7C7C7;
+    padding-left: 5px;
+}
+.statistics{
+    padding-left: 30px ;
+}
+.progressbar2 {
+  background-color:#F1F1F1;
+  border-radius: 13px;
+  padding: 3px;
+  width: 530px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.progressbar2>div {
+  background-color: #F79042;
+  width: 52%;
+  height: 15px;
+  border-radius: 10px;
+}
+.progressbar3 {
+  background-color:#F1F1F1;
+  border-radius: 13px;
+  padding: 3px;
+  width: 530px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.progressbar3>div {
+  background-color: #209D43;
+  width: 21%;
+  height: 15px;
+  border-radius: 10px;
+}
+.progressbar4 {
+  background-color:#F1F1F1;
+  border-radius: 13px;
+  padding: 3px;
+  width: 530px;
+  height: 15px;
+  margin-right: 10px;
+
+}
+
+.progressbar4>div {
+  background-color: #70A6E8;
+  width: 74%;
+  height: 15px;
+  border-radius: 10px;
+}
+.plain{
+    background-color: #E4F0FF;
+    width: 40px;
+    height: 40px;
+    box-shadow:0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.orange{
+    background-color: #FFEADA;
+    width: 40px;
+    height: 40px;
+    box-shadow:0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.green{
+    background-color: #DDF9E4;
+    width: 40px;
+    height: 40px;
+    box-shadow:0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.num{
+    font-size: 25px;
+    justify-content:  center;
+    color: #696969;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    
+}
+.grid{
+    display:grid;
+    grid-template-rows: repeat(6),1fr ;
+    gap: 19px;
+}
+.grid-line{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #F1F1F1;
+}
+.grey-background{
+    background-color: #EFEFEF;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+    padding: 2px 2px 2px 2px;
+}
+
+.first-child{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color:#AEAEAE
+}
+.card-line{
+    align-items: center;
+}
+h1{
+    font-size: 43px;
+    font-weight: 600px;
+}
+label{
+    width: 195px;
+    height: 36px;
+    display: flex;
+}
+input{
+    width: 195px;
+    height: 36px;
+    background: #ffffff;
+    border: 1px solid #197bbd;
+    border-radius: 9px;
+    padding:3px 10px;
+    font-size: 23px;
+}
+.dollar{
+    position: absolute;
+    justify-content: right;
+    padding:5px 10px 5px 175px;
+    font-size: 23px;
+    color: #8a8585;
+}
+input.apple-switch {
+position: relative;
+appearance: none; 
+outline: none;
+width: 50px; 
+height: 30px;
+margin-top:40px;
+margin-left: 65px;
+margin-bottom: 15px;
+text-align: right;
+background-color:#CDCDCD; 
+border: 1px solid #D9DADC;
+border-radius: 50px; 
+box-shadow: inset -20px 0 0 0 #ffffff;
+transition-duration: 200ms;
+}
+input.apple-switch:after {
+content: "";
+position: absolute;
+top: 1px; 
+left: 1px;
+width: 26px; 
+height: 26px;
+background-color: #c7c5c5;
+border-radius: 50%; 
+box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+}
+input.apple-switch:checked {
+border-color: #4ED164;
+box-shadow: inset 20px 0 0 0 #4ED164;
+}
+input.apple-switch:checked:after {
+left: 20px;
+box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+}
+</style>
+
+
+
+<body>
+
+<div class="document"> 
+    <div class="first-block">
+
+        <div class="logo">
+            <img src="./Group 166.svg"  alt="">
+            <p> <b> cloudcash</b> </p>
+        </div>
+        
+        <div class="options">
+            <div class="line"> <img class="img-size" src="./Group 70.png" alt="">
+            <p class="opt-line">  Overview </p></div> 
+            <div class="line"><img class="img-size" src="./Frame 7.png" alt="">
+            <p class="opt-line"> Transactions</p></div>
+            <div class="line"><img class="img-size" src="./Frame 7 (1).png" alt="">
+            <p class="opt-line"> Cards</p></div>
+            <div class="line"><img class="img-size" src="./Frame 7 (2).png" alt="">
+            <p class="opt-line"> Invoices</p></div>
+            <div class="line"><img class="img-size" src="./Frame 7 (3).png" alt="">
+            <p class="opt-line"> Goals</p></div>
+            <div class="line"><img class="img-size" src="./Frame 7 (4).png" alt="">
+            <p class="opt-line"> Settings</p></div>
+        </div>
+
+        <div class="upgrade">
+            <img src="./Group 158.png" alt="">
+            <p class="upgrade-items">Give your money <br> awesome space in cloud</p>
+            <button id="first">Upgrade to premium ↑</button>
+        </div>
+    </div>
+
+
+    <div class="second-block">
+
+
+        <div class="title">
+            <div> <h1>Weekly sumup</h1>
+                  <p class="grey-title">Get summary of your weekly online transactions here.</p></div>
+
+            <div class="account">
+                <div class="one-more-class"><img src="./Group 137.png" alt=""></div>
+                <div ><span>Andrew</span>
+                    <br>
+                    <span class="narr-grey">Admin account</span></div></div>
+        </div> 
+
+        <div class="columns">
+    
+        <div class="first-column">
+
+            <div class="card-block">
+
+                <div> 
+                    <h2 class="h2">Cards</h2>
+                    <div class="card-line">
+                        <div class="card-line-items"><img src="./Vector 40.png" alt=""></div>
+                        <div class="card-line-items"><img src="./Group 110.png" alt=""></div>
+                    <div class="card-line-items"><img src="./Vector 39.png" alt=""> </div>
+                    </div>
+
+
+                    <div class="card-2line">
+                        <div class="progressbar">
+                        <div></div> </div>
+                        <div class="classs"><div class="class1"><p>Weekly payment limit</p></div>
+                        <div class="class2"><p>$350.60/$4000</p></div></div>
+                    </div>
+                </div>
+
+
+                <div class="card-right"> 
+                <p id="blue"><b>$2850.75 </b> </p>
+                <p class="card-grey">Current balance</p>
+                <p id="green2"><b> $1500.50</b></p>
+                <p class="card-grey">Income</p>
+                <p id="red"> <b>$350.60</b></p>
+                <p class="card-grey">Outcome</p>
+                <input class="apple-switch" type="checkbox">
+                <p class="card-grey">Deactivate card</p>
+                </div>
+            </div>
+
+            <div class="transaction-block">
+                <h2>Transaction history</h2>
+                <div class="grid">
+                    <div class="first-child">
+                        <p>Reciever</p>
+                        <p class="grey-grid">Type</p>
+                        <p class="grey-grid">Date</p>
+                        <p class="right-position">Amount</p>
+                    </div>
+                    <div class="grid-line">
+                        <div class="again-class"><img class="grey-background" src="./Group 98.svg" alt=""> Tesco Market</div>
+                        <div class="grey-grid">Shopping</div>
+                        <div class="grey-grid">13 Dec 2020</div>
+                        <div class="right-position"> <b> $75.67 </b></div></div>
+                    <div class="grid-line">
+                        <div class="again-class"> <img class="grey-background" src="./Group 98.svg" alt=""> ElectroMen Market</div>
+                        <div class="grey-grid">Shopping</div>
+                        <div class="grey-grid">14 Dec 2020</div>
+                        <div class="right-position"><b>$250.00 </b></div>
+                    </div>
+                    <div class="grid-line">
+                        <div class="again-class"> <img class="grey-background" src="./Group 100.svg" alt=""> Fiorgio Restaurant</div>
+                        <div class="grey-grid">Food</div>
+                        <div class="grey-grid">07 Dec 2020</div>
+                        <div class="right-position"><b>$19.50 </b> </div>
+                    </div>
+                    <div class="grid-line">
+                        <div class="again-class"> <img class="grey-background"src="./Group 101.svg" alt=""> John Mathew Kayne</div>
+                        <div class="grey-grid">Sport</div>
+                        <div class="grey-grid">06 Dec 2020</div>
+                        <div class="right-position"><b>$350</b></div>
+                    </div>
+                    <div class="grid-line">
+                        <div class="again-class"> <img class="grey-background" src="./Group 101.svg" alt=""> Ann Marlin</div>
+                        <div class="grey-grid">Shopping</div>
+                        <div class="grey-grid">31 Nov 2020</div>
+                        <div class="right-position"> <b>$430 </b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-column">
+
+            <div class="goals-block">
+
+                <div class="goals-line"><h2>Goals</h2>
+                <img src="./Group 129.svg" alt=""></div>
+
+                <div class="goals-box-sum">
+                    <div class="goals-box">
+                        <p class="b-line"> <b> $550 </b></p>
+                        <p class="date-line">12/20/20</p>
+                        <img src="./Vector (9).png" alt="">
+                        <p >Holidays</p>
+                    </div>
+                    <div class="goals-box">
+                        <p class="b-line"> <b> $200 </b></p>
+                        <p class="date-line">12/20/20</p>
+                        <img src="./Vector (10).png" alt="">
+                        <p>Renovation</p>
+                    </div>
+                    <div class="goals-box">
+                        <p class="b-line"> <b> $820</b></p>
+                        <p class="date-line">12/20/20</p>
+                        <img src="./Vector (11).png" alt="">
+                        <p>Xbox</p>
+                    </div>
+                    <div  ><img src="./Vector 39.png" alt=""> </div>
+                </div>
+            </div>
+
+
+            <div class="statistics">
+                <h2>Outcome Statistics</h2>
+
+                <div class="stat-line">
+                    <img class="orange" src="./Slice 3.svg" alt="">
+                    <div class="stat-center">
+                        <div class="progressbar2">
+                        <div></div> </div> 
+                       <span class="stat-grey">Shopping</span>
+                    </div>
+                    <p class="num"> <b> 52% </b></p>
+                </div>
+
+                <div class="stat-line">
+                    <img class="green" src="./Slice 1.svg" alt="">
+                    <div class="stat-center">
+                    <div class="progressbar3">
+                        <div></div> </div>
+                        <span class="stat-grey" >Electronics</span>
+                    </div>
+                    <p class="num"> <b>21% </b></p>
+                </div>
+
+                <div class="stat-line">
+                    <img class="plain" src="./Slice 2.svg" alt="">
+                    <div class="stat-center"> 
+                    <div class="progressbar4">
+                        <div></div>  </div>
+                        <span class="stat-grey">Travel</span>
+                    </div>
+                    <p class="num"> <b> 74% </b></p>
+                </div>
+            </div>
+
+
+
+            <div class=transaction> 
+                <div class="last-block">
+                    <h2>New transaction</h2>
+                    <div class="photos">
+                        <div><img src="./Ellipse 50.png" alt="">
+                        <p>Ann</p></div>
+                        <div><img src="./Ellipse 49.png" alt="">
+                        <p>Monica</p></div>
+                        <div><img src="./Ellipse 48.png" alt="">
+                        <p>John</p></div>
+                        <div><img src="./Ellipse 51.png" alt="">
+                        <p>Mike</p></div>
+                        <div><img src="./Ellipse 52.png" alt="">
+                        <p>Mia</p></div>
+                        <div><img src="./Group 129.svg" alt="">
+                        <p>Add New</p></div>
+                    </div>
+                    <div class="last-line">
+                        <label for=""><input type="text" placeholder="0" > <span class="dollar"> $ </span></label>
+                        <button>Send the transfer > </button></div>
+                </div>
+                <div ><img class="last-pic" src="./Slice 1 (1).png" alt=""></div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+</div>
+</html>
